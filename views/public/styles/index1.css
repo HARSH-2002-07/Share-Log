@@ -1,0 +1,88 @@
+.container0{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(35, 35, 35); 
+}
+.vertical-navbar{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    background-color: rgb(35, 35, 35);  
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+}
+.vertical-items-navbar{
+    list-style-type: none;
+}
+.vertical-items-navbar-list-title {
+   height: 30%; /* Take more space */
+   font-size: 38px;
+   padding-bottom: 12px;
+   color: azure;
+}
+
+
+.horizontal-page{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+.container-Account-graph{
+    width: 70%;
+    margin-right: 40px;
+    border-radius: 20px;
+    
+}
+.image-account-graph{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+    
+}
+.container-Portfolio{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.container-Heading-portfolio{
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-PieChart{
+    color: #000;
+}
+.container-Elements{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-color{
+    width: 24px;
+    height: 24px;
+    border: 1-x solid black;
+}
+.container-element-in{
+    color: purple;
+}
+
+
+
+.container-of-containers{
+    display: flex;
+    flex-direction: row;
+}

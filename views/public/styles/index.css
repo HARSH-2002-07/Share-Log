@@ -1,0 +1,151 @@
+.container0{
+    display: flex;
+    background-color: rgb(35, 35, 35); 
+}
+.vertical-half{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    background-color: rgb(35, 35, 35);  
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+}
+.vertical-items-navbar{
+    list-style-type: none;
+}
+.vertical-items-navbar-list-title {
+   height: 30%; /* Take more space */
+   font-size: 38px;
+   padding-bottom: 12px;
+   color: azure;
+}
+
+
+.vertical-items-navbar-list-item {
+    /* Equal space for other items */
+    flex: 1;
+    font-size: 28px;
+    padding-bottom: 8px;
+    color: white;
+}
+.vertical-items-navbar-item:hover{
+    border-radius: 10px;
+    background-color: aqua;
+    
+}
+.vertical-items-navbar-list-item:hover{color: black;}
+.vertical-items-navbar-item{
+    padding-left: 2rem;
+}
+
+
+
+
+.container-navbar-horizontal{
+height: 30%;
+
+align-items: center;
+flex-direction: row;
+justify-content: flex-start;
+}
+.navbar-brand{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1; /* Set opacity to 1 for solid color */
+    background-color: rgba(35, 35, 35, 1) !important; /* Set your desired RGB values */
+}
+
+.horizontal-half{
+    flex-direction: row;
+    background-color: rgb(35, 35, 35);
+    padding-left: 1rem;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+}
+.container-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amount-and-day{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.amount{
+    display: flex;
+    justify-content: flex-start;
+    
+    flex: 1;
+}
+.day-dropdown{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.container-of-containers{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.notification-icon {
+    position: relative;
+    text-decoration: none;
+    color: black; 
+    /* Adjust icon color as needed */
+    /* Adjust icon color as needed */
+ 
+  }
+  
+  .notification-icon i {
+    font-size: 40px;
+     /* Adjust icon size as needed */
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: 20px; /* Adjust position as needed */
+    right: -8px; /* Adjust position as needed */
+    background-color: red;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+
+  .profile-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 8px; /* Add some spacing between the icon and the name */
+}
+
+.profile-name {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: white; /* Adjust the color as needed */
+}
+
+  
+.btn-secondary 
+{
+background-color: rgba(35, 35, 35, 1);
+}
+  

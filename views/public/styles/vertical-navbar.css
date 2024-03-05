@@ -1,0 +1,18 @@
+.vertical-navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    background-color: rgb(35, 35, 35);  
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+}
+.vertical-items-navbar{
+    list-style-type: none;
+}
+.vertical-items-navbar-list-title {
+   height: 30%; /* Take more space */
+   font-size: 38px;
+   padding-bottom: 12px;
+   color: azure;
+}

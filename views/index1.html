@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/styles/index1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div class="container0">
+        <div class="vertical-navbar">
+            <ul class="vertical-items-navbar" style="padding-left: 0;">
+                <div class="vertical-items-navbar-title">
+                  <li class="vertical-items-navbar-list-title">Share Log</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#1255;Dashboard</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#2225;Portfolio</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#3225;Report</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#4225;Strategy</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#5225;Wishlist</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#6225;Categories</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#7225;Community</li>
+                </div>
+                <div class="vertical-items-navbar-item">
+                  <li class="vertical-items-navbar-list-item">&#8225;Profile</li>
+                </div>
+            </ul>
+        </div>
+        <div class="horizontal-page">
+          <div class="container1">
+            <div class="container-Account-graph">
+              <img class="image-account-graph" src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9" alt="Account Graph">
+            </div>
+            <div class="container-Portfolio">
+              <div class="container-Heading-portfolio">
+                <h1 class="Portfolio-heading">Portfolio</h1>
+              </div>
+              <div class="container-PieChart">
+                <canvas  id="doughnut-chart" width="200" height="200"></canvas>
+
+              </div>
+              <div class="container-Elements">
+                <div class="container-element">
+                  <div class="container-color" style="background-color: orange;">
+
+                  </div>
+                  <div class="container-element-in">
+                    <h3 class="equity">Equity</h3>
+                  </div>
+                </div>
+                <div class="container-element">
+                  <div class="container-color" style="background-color: yellow;">
+
+                  </div>
+                  <div class="container-element-in">
+                    <h3 class="Yellow">Yellow</h3>
+                  </div>
+                </div>
+                <div class="container-element">
+                  <div class="container-color" style="background-color: cyan;">
+
+                  </div>
+                  <div class="container-element-in">
+                    <h3 class="Optioins">Options</h3>
+                  </div>
+                </div>
+                <div class="container-element">
+                  <div class="container-color" style="background-color: purple;">
+
+                  </div>
+                  <div class="container-element-in">
+                    <h3 class="Commodity">Commodity</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <div class="container-of-containers">
+              <div class="container-cards"><div class="card1" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div></div>
+              <div class="container-cards"><div class="card2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div></div>
+              <div class="container-cards"><div class="card3" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div></div>
+              <div class="container-cards"><div class="card4" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div></div>
+            
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      // Sample data for the doughnut chart
+      const doughnutData = {
+          labels: ['Orange', 'Yellow', 'Cyan', 'Purple'], // Sample labels
+          data: [300, 50, 100, 200], // Sample data values
+          backgroundColors: [ // Sample background colors
+              'rgb(255, 165, 0)',
+              'rgb(255, 255, 0)',
+              'rgb(0, 255, 255)',
+              'rgb(128, 0, 128)'
+          ]
+      };
+
+      // Get the canvas element
+      const ctx = document.getElementById('doughnut-chart').getContext('2d');
+
+      // Create the doughnut chart
+      const myDoughnutChart = new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+              labels: doughnutData.labels,
+              datasets: [{
+                  label: 'My Doughnut Dataset',
+                  data: doughnutData.data,
+                  backgroundColor: doughnutData.backgroundColors,
+                  hoverOffset: 4
+              }]
+          },
+          options: {
+              cutout: '50%' // Makes the doughnut chart a circle
+          }
+      });
+  </script>
+
+</body>
+</html>
